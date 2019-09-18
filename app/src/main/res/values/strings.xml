@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Latihan_uts</string>
+
+    <string-array name="prodi">
+
+        <item>Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+
+
+
+    </string-array>
+
+</resources>

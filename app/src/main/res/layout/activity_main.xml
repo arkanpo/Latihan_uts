@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENDAFTARAN \nSiswa SMK Jaya Pembangunan"
+                android:textSize="24sp"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#525252"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/coba"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/ic_user"/>
+
+                <EditText
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nama Depan"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="24dp"
+                    />
+
+                <EditText
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:id="@+id/nama_belakang"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nama Belakanag"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/ic_location_on_black_24dp"/>
+
+                <EditText
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Alamat"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/ic_call_black_24dp"/>
+
+                <EditText
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:id="@+id/telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nomer Telepon"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/ic_domain_black_24dp"/>
+
+
+                <RadioGroup
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:id="@+id/lulusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="SMA"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="SMK"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="ALIYAH"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/ic_timeline_black_24dp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:entries="@array/prodi"
+                    android:id="@+id/sprodi"></Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Sekolah Alternatif"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/ic_filter_list_black_24dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SMK TRIDAYA" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SMK SWASTA" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SMK NEGRI 1" />
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SMKN 1 CIBINONG" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
